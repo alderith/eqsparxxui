@@ -197,8 +197,8 @@
 		<LeftAnchorOffset>88</LeftAnchorOffset>
 		<TopAnchorOffset>13</TopAnchorOffset>
 		<RightAnchorOffset>2</RightAnchorOffset>
-		<BottomAnchorOffset>14</BottomAnchorOffset>
-		<BottomAnchorToTop>false&gt;</BottomAnchorToTop>
+		<BottomAnchorOffset>10</BottomAnchorOffset>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<TopAnchorToTop>true</TopAnchorToTop>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
@@ -747,8 +747,8 @@
 		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
 		<LeftAnchorOffset>4</LeftAnchorOffset>
-		<TopAnchorOffset>430</TopAnchorOffset>
-		<RightAnchorOffset>84</RightAnchorOffset>
+		<TopAnchorOffset>433</TopAnchorOffset>
+		<RightAnchorOffset>88</RightAnchorOffset>
 		<BottomAnchorOffset>446</BottomAnchorOffset>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<TopAnchorToTop>true</TopAnchorToTop>
@@ -893,16 +893,21 @@
 		<AutoStretch>true</AutoStretch>
 		<LeftAnchorOffset>4</LeftAnchorOffset>
 		<TopAnchorOffset>401</TopAnchorOffset>
-		<RightAnchorOffset>196</RightAnchorOffset>
-		<BottomAnchorOffset>421</BottomAnchorOffset>
+		<RightAnchorOffset>88</RightAnchorOffset>
+		<BottomAnchorOffset>419</BottomAnchorOffset>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<TopAnchorToTop>true</TopAnchorToTop>
-		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<RightAnchorToLeft>true</RightAnchorToLeft>
 		<BottomAnchorToTop>true</BottomAnchorToTop>
 		<Style_Transparent>false</Style_Transparent>
 		<TooltipReference>Toggle to use components from your personal tradeskill depot when combining.</TooltipReference>
 		<Style_Checkbox>true</Style_Checkbox>
 		<Text>P. Depot</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
 		<Template>BDT_CheckboxWithText</Template>
 		<DecalSize>
 			<CX>16</CX>
@@ -910,23 +915,29 @@
 		</DecalSize>
 		<TextAlignCenter>false</TextAlignCenter>
 		<TextOffsetX>20</TextOffsetX>
+		<Font>2</Font>
 	</Button>
 	<Button item="COMBW_GuildDepotCheckbox">
 		<ScreenID>GuildDepotCheckbox</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
 		<LeftAnchorOffset>4</LeftAnchorOffset>
-		<TopAnchorOffset>416</TopAnchorOffset>
-		<RightAnchorOffset>196</RightAnchorOffset>
-		<BottomAnchorOffset>432</BottomAnchorOffset>
+		<TopAnchorOffset>418</TopAnchorOffset>
+		<RightAnchorOffset>88</RightAnchorOffset>
+		<BottomAnchorOffset>431</BottomAnchorOffset>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<TopAnchorToTop>true</TopAnchorToTop>
-		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<RightAnchorToLeft>true</RightAnchorToLeft>
 		<BottomAnchorToTop>true</BottomAnchorToTop>
 		<Style_Transparent>false</Style_Transparent>
 		<TooltipReference>Toggle to use components from your guild's tradeskill depot when combining.</TooltipReference>
 		<Style_Checkbox>true</Style_Checkbox>
 		<Text>G. Depot</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
 		<Template>BDT_CheckboxWithText</Template>
 		<DecalSize>
 			<CX>16</CX>
@@ -934,6 +945,7 @@
 		</DecalSize>
 		<TextAlignCenter>false</TextAlignCenter>
 		<TextOffsetX>20</TextOffsetX>
+		<Font>2</Font>
 	</Button>
 	<Screen item="TradeskillWnd">
 		<RelativePosition>false</RelativePosition>
