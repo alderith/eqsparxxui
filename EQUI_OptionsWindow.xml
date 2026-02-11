@@ -773,7 +773,7 @@
 		<ScreenID>OGP_NoDropItemLabel</ScreenID>
 		<Size>
 			<CX>160</CX>
-			<CY>15</CY>
+			<CY>14</CY>
 		</Size>
 		<Text>No Drop Item:</Text>
 		<NoWrap>true</NoWrap>
@@ -783,6 +783,10 @@
 	<Combobox item="OGP_NoDropItemCombobox">
 		<ScreenID>OGP_NoDropItemCombobox</ScreenID>
 		<DrawTemplate>WDT_Inner</DrawTemplate>
+		<Location>
+			<X>200</X>
+			<Y>372</Y>
+		</Location>
 		<Size>
 			<CX>160</CX>
 			<CY>24</CY>
@@ -915,6 +919,23 @@
 		</Size>
 		<Style_Checkbox>true</Style_Checkbox>
 		<Text>Roleplaying</Text>
+		<Template>BDT_CheckboxWithText</Template>
+		<DecalSize>
+			<CX>16</CX>
+			<CY>16</CY>
+		</DecalSize>
+		<TextAlignCenter>false</TextAlignCenter>
+		<TextOffsetX>20</TextOffsetX>
+	</Button>
+	<Button item="OGP_SpellAutoGrantCheckBox">
+		<ScreenID>OGP_SpellAutoGrantCheckBox</ScreenID>
+		<Size>
+			<CX>180</CX>
+			<CY>20</CY>
+		</Size>
+		<Style_Checkbox>true</Style_Checkbox>
+		<Text>Auto-Grant Spells</Text>
+		<TooltipReference>When enabled, you will automatically scribe new spells when leveling up. Some spells may not be auto-granted, such as spells within a certain threshold of the current expansion.</TooltipReference>
 		<Template>BDT_CheckboxWithText</Template>
 		<DecalSize>
 			<CX>16</CX>
@@ -1159,6 +1180,33 @@
 			<CY>15</CY>
 		</Size>
 	</Label>
+		<!-- Augment Prompts -->
+	<Label item="OGP_AugmentPromptLabel">
+		<ScreenID>OGP_AugmentPromptLabel</ScreenID>
+		<Size>
+			<CX>160</CX>
+			<CY>15</CY>
+		</Size>
+		<Text>Augment Prompts:</Text>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+		<TooltipReference>Controls whether you get prompted when inserting, removing, or swapping augments in an item.</TooltipReference>
+	</Label>
+	<Combobox item="OGP_AugmentPromptCombobox">
+		<ScreenID>OGP_AugmentPromptCombobox</ScreenID>
+		<DrawTemplate>WDT_Inner</DrawTemplate>
+		<Size>
+			<CX>160</CX>
+			<CY>24</CY>
+		</Size>
+		<ListHeight>60</ListHeight>
+		<Button>BDT_Combo</Button>
+		<Style_Border>true</Style_Border>
+		<Choices>Always</Choices>
+		<Choices>Never</Choices>
+		<Choices>Perfected Only</Choices>
+	</Combobox>
 	<!-- Item Placement Hide UI -->
 	<Button item="OGP_ItemPlacementHideUICheckbox">
 		<ScreenID>OGP_ItemPlacementHideUICheckbox</ScreenID>
@@ -1326,7 +1374,7 @@
 		</Location>
 		<Size>
 			<CX>175</CX>
-			<CY>710</CY>
+			<CY>720</CY>
 		</Size>
 		<Spacing>0</Spacing>
 		<ResizeLast>false</ResizeLast>
@@ -1337,6 +1385,7 @@
 		<Pieces>OGP_LootAutosplitCheckbox</Pieces>
 		<Pieces>OGP_AnonymousCheckbox</Pieces>
 		<Pieces>OGP_RoleplayingCheckbox</Pieces>
+		<Pieces>OGP_SpellAutoGrantCheckBox</Pieces>
 		<Pieces>OGP_PetWindowPopupCheckbox</Pieces>
 		<Pieces>OGP_AllowContextMenusCheckbox</Pieces>
 		<Pieces>OGP_LeftClickHelpText</Pieces>
@@ -1378,8 +1427,8 @@
 			<Y>325</Y>
 		</Location>
 		<Size>
-			<CX>175</CX>
-			<CY>420</CY>
+			<CX>160</CX>
+			<CY>460</CY>
 		</Size>
 		<Spacing>0</Spacing>
 		<ResizeLast>false</ResizeLast>
@@ -1401,6 +1450,8 @@
 		<Pieces>OGP_SellCashConfirmCheckbox</Pieces>
 		<Pieces>OGP_NoDropItemLabel</Pieces>
 		<Pieces>OGP_NoDropItemCombobox</Pieces>
+		<Pieces>OGP_AugmentPromptLabel</Pieces>
+		<Pieces>OGP_AugmentPromptCombobox</Pieces>
 		<Pieces>OGP_ItemPlacementLabel</Pieces>
 		<Pieces>OGP_ItemPlacementHideUICheckbox</Pieces>
 		<Pieces>OGP_ItemPlacementDefaultModeCursorCheckbox</Pieces>
@@ -1455,6 +1506,8 @@
 		<Pieces>OGP_FontSelector</Pieces>
 		<Pieces>OGP_PlayerTradeCombobox</Pieces>
 		<Pieces>OGP_ItemDroppingCombobox</Pieces>
+		
+
 	</Page>
 	<!-- *********** Options Tab Window, Display Options Page *********** -->
 	<!-- PCNames -->
