@@ -158,11 +158,11 @@
 		<Font>2</Font>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>296</X>
+			<X>266</X>
 			<Y>238</Y>
 		</Location>
 		<Size>
-			<CX>105</CX>
+			<CX>140</CX>
 			<CY>20</CY>
 		</Size>
 		<Style_Transparent>false</Style_Transparent>
@@ -178,6 +178,8 @@
 			<G>255</G>
 			<B>0</B>
 		</BackgroundTextureTint>
+		<TooltipReference>Upgrade current character to a fully equipped Heroic Character.</TooltipReference>
+		<Template>BDT_Normal</Template>
 		<ButtonDrawTemplate>
 			<Normal>A_BtnNormal</Normal>
 			<Pressed>A_BtnPressed</Pressed>
@@ -193,11 +195,11 @@
     <TooltipReference>Select which level of Heroic Character to use.</TooltipReference>
     <RelativePosition>true</RelativePosition>
     <Location>
-      <X>170</X>
-      <Y>423</Y>
+      <X>266</X>
+      <Y>258</Y>
     </Location>
     <Size>
-      <CX>142</CX>
+      <CX>140</CX>
       <CY>20</CY>
     </Size>
     <ListHeight>40</ListHeight>
