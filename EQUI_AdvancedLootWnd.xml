@@ -2,7 +2,7 @@
 <XML ID="EQInterfaceDefinitionLanguage">
 	<Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
 
-	<!-- Personal Loot -->
+	<!-- Solo Loot -->
 	<Label item="ADLW_PLLLbl">
 		<ScreenID>ADLW_PLLLbl</ScreenID>
 		<Location>
@@ -13,7 +13,7 @@
 			<CX>105</CX>
 			<CY>24</CY>
 		</Size>
-		<Text>Personal Loot</Text>
+		<Text>Solo Loot</Text>
 	</Label>
 	<Button item="ADLW_PLL_LootAllBtn">
 		<ScreenID>ADLW_PLL_LootAllBtn</ScreenID>
@@ -26,7 +26,7 @@
 		<BottomAnchorToTop>true</BottomAnchorToTop>
 		<LeftAnchorToLeft>false</LeftAnchorToLeft>
 		<RightAnchorToLeft>false</RightAnchorToLeft>
-		<TooltipReference>Loot all items in the Personal Loot list.</TooltipReference>
+		<TooltipReference>Loot all items in the Solo Loot list.</TooltipReference>
 		<Text>Loot All</Text>
 		<Template>BDT_SmallNormal</Template>
 	</Button>
@@ -91,6 +91,12 @@
 			<Tooltip>NPC Name</Tooltip>
 		</Columns>
 		<Columns>
+			<Width>95</Width>
+			<Heading>Personal Loot</Heading>
+			<Sortable>true</Sortable>
+			<Tooltip>Is this item personal loot (no one else can take it)</Tooltip>
+		</Columns>
+		<Columns>
 			<Width>10</Width>
 		</Columns>
 		<TooltipReference>Set loot decisions here for each item.</TooltipReference>
@@ -142,7 +148,7 @@
 		<BottomAnchorToTop>false</BottomAnchorToTop>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<RightAnchorToLeft>true</RightAnchorToLeft>
-		<TooltipReference>Leave all items in the Personal Loot list.</TooltipReference>
+		<TooltipReference>Leave all items in the Solo Loot list.</TooltipReference>
 		<Text>Leave All</Text>
 		<Template>BDT_SmallNormal</Template>
 	</Button>
@@ -508,6 +514,28 @@
 		<RightAnchorToLeft>false</RightAnchorToLeft>
 		<TextAlignCenter>false</TextAlignCenter>
 	</Button>
+	  <Button item="ADLW_TextLinkPLTemplate">
+    <ScreenID>ADLW_TextLinkPLTemplate</ScreenID>
+    <RelativePosition>true</RelativePosition>
+    <AutoStretch>true</AutoStretch>
+    <TopAnchorToTop>true</TopAnchorToTop>
+    <BottomAnchorToTop>false</BottomAnchorToTop>
+    <LeftAnchorToLeft>true</LeftAnchorToLeft>
+    <RightAnchorToLeft>false</RightAnchorToLeft>
+    <TextAlignCenter>false</TextAlignCenter>
+	<Template>BDT_PersonalLoot</Template>
+	
+	<!-- <BackgroundTextureTint> -->
+		<!-- <R>0</R> -->
+		<!-- <G>0</G> -->
+		<!-- <B>255</B> -->
+	<!-- </BackgroundTextureTint> -->
+	<!-- <TextColor> -->
+		<!-- <R>255</R> -->
+		<!-- <G>255</G> -->
+		<!-- <B>255</B> -->
+	<!-- </TextColor> -->
+  </Button>
 	
 	<Button item="ADLW_CheckBoxTemplate">
 		<ScreenID>ADLW_CheckBoxTemplate</ScreenID>
@@ -708,5 +736,6 @@
 		<Pieces>ADLW_LeaveBtnTemplate</Pieces>
 		<Pieces>ADLW_CheckBoxTemplate</Pieces>
 		<Pieces>ADLW_TextLinkTemplate</Pieces>
+		<Pieces>ADLW_TextLinkPLTemplate</Pieces>
 	</Screen>
 </XML>

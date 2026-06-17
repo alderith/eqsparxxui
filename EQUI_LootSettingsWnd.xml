@@ -209,6 +209,27 @@
 		<TextAlignCenter>false</TextAlignCenter>
 		<TextOffsetX>20</TextOffsetX>
 	</Button>
+		    <Button item="LS_IgnorePLWarning">
+        <ScreenID>LS_IgnorePLWarning</ScreenID>
+        <Location>
+            <X>10</X>
+            <Y>170</Y>
+        </Location>
+        <Size>
+            <CX>250</CX>
+            <CY>16</CY>
+        </Size>
+        <Style_Checkbox>true</Style_Checkbox>
+        <Text>Ignore Personal Loot Warning</Text>
+        <TooltipReference>Turns off warnings about leaving Personal Loot items on corpses. Any items on a corpse that are tagged for Personal Loot will disappear if left on the corpse for any reason.</TooltipReference>
+        <Template>BDT_CheckboxWithText</Template>
+        <DecalSize>
+            <CX>16</CX>
+            <CY>16</CY>
+        </DecalSize>
+        <TextAlignCenter>false</TextAlignCenter>
+        <TextOffsetX>20</TextOffsetX>
+    </Button>
 	<Screen item="LootSettingsWnd">
 		<!--<ScreenID/>-->
 		<Location>
@@ -217,7 +238,7 @@
 		</Location>
 		<Size>
 			<CX>270</CX>
-			<CY>200</CY>
+			<CY>220</CY>
 		</Size>
 		<Text>Loot Settings</Text>
 		<Style_VScroll>false</Style_VScroll>
@@ -239,5 +260,7 @@
 		<Pieces>LS_ShowOnNewItemsOnlyCheckbox</Pieces>
 		<Pieces>LS_AutoLootAllCheckbox</Pieces>
 		<Pieces>LS_MasterLooterCandidate</Pieces>
+		<Pieces>LS_IgnorePLWarning</Pieces>
 	</Screen>
+
 </XML>
